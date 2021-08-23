@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"gc9a01\startup_stm32f407xx.o"
+"gc9a01\main.o"
+"gc9a01\stm32f4xx_it.o"
+"gc9a01\stm32f4xx_hal_msp.o"
+"gc9a01\stm32f4xx_hal_spi.o"
+"gc9a01\stm32f4xx_hal_rcc.o"
+"gc9a01\stm32f4xx_hal_rcc_ex.o"
+"gc9a01\stm32f4xx_hal_flash.o"
+"gc9a01\stm32f4xx_hal_flash_ex.o"
+"gc9a01\stm32f4xx_hal_flash_ramfunc.o"
+"gc9a01\stm32f4xx_hal_gpio.o"
+"gc9a01\stm32f4xx_hal_dma_ex.o"
+"gc9a01\stm32f4xx_hal_dma.o"
+"gc9a01\stm32f4xx_hal_pwr.o"
+"gc9a01\stm32f4xx_hal_pwr_ex.o"
+"gc9a01\stm32f4xx_hal_cortex.o"
+"gc9a01\stm32f4xx_hal.o"
+"gc9a01\stm32f4xx_hal_exti.o"
+"gc9a01\stm32f4xx_hal_tim.o"
+"gc9a01\stm32f4xx_hal_tim_ex.o"
+"gc9a01\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "GC9A01\GC9A01.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GC9A01.map" -o GC9A01\GC9A01.axf
